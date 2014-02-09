@@ -8,6 +8,10 @@ SocialKarma::Application.routes.draw do
   get 'users/:id' => 'users#show'
   delete 'users/:id' => 'users#destroy'
 
+  get '/auths' => 'auths#new', :as => :new_auth
+  post '/auths' => 'auths#create'
+  delete '/auths' => 'auths#destroy'  
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
