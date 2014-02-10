@@ -26,8 +26,8 @@
 </table>
 
 
-<%=link_to 'Sign Up', users_new_path, {class: "btn btn-large btn-primary"} %>
-<%=link_to 'Log In', new_auth_path, {class: "btn btn-lage btn-primary"} %>
-<%=button_to "Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete} %>
+<%#=link_to 'Sign Up', users_new_path, {class: "btn btn-large btn-primary"} %>
+<%#=link_to 'Log In', new_auth_path, {class: "btn btn-lage btn-primary"} %>
+<%#=button_to "Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete} %>
 
-<%= current_user ? current_user.name : "You are not logged in" %>
+<%#= current_user ? "Hello #{current_user.name}" : "You are not logged in" %>
