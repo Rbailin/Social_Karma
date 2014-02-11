@@ -37,8 +37,10 @@
 		</li>
 		<li>
 			<% if current_user %>
-				<%=button_to "Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete} %>
-			<% else %>
+				<%=button_to "Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete, class: "btn btn-lage btn-primary"} %>
+    <%#=button_to("Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete}, class: "btn btn-large btn-primary")%>			
+
+  <% else %>
 				<%= link_to 'Log In', new_auth_path, {class: "btn btn-lage btn-primary"} %>
 			<% end %>
 		</li>
@@ -48,6 +50,11 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+    
+
+
+
 
 	</header>
 
