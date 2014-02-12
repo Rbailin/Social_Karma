@@ -10,4 +10,11 @@ class ApplicationController < ActionController::Base
   		User.find_by(id:session[:user_id])
   	end
   end 
+
+  def authenticate_user
+  	redirect_to auths_path undless current_user
+  end
+
+
+
 end

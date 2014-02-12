@@ -1,14 +1,11 @@
 <h1>Trustees!</h1>
-	<table class="table table-bordered">
+<table>
 	<thead>
 		<tr>
 			<th><strong>NAME</strong></th>
 			<th>USERNAME</th>
 			<th>EMAIL</th>
 			<th>RATING</th>
-			<th>EDIT</th>
-			<th>DELETE</th>
-			<th>SHOW</th>
 		</tr>
 	</thead>
 	<tbody> 
@@ -29,8 +26,8 @@
 </table>
 
 
-<%#=link_to 'Sign Up', users_new_path, {class: "btn btn-large btn-primary"} %>
-<%#=link_to 'Log In', new_auth_path, {class: "btn btn-lage btn-primary"} %>
-<%#=button_to "Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete} %>
+<%=link_to 'Sign Up', users_new_path, {class: "btn btn-large btn-primary"} %>
+<%=link_to 'Log In', new_auth_path, {class: "btn btn-lage btn-primary"} %>
+<%=button_to "Log Out", {:controller => 'auths', :action => 'destroy'}, {:method => :delete} %>
 
-<%#= current_user ? "Hello #{current_user.name}" : "You are not logged in" %>
+<%= current_user ? current_user.name : "You are not logged in" %>
