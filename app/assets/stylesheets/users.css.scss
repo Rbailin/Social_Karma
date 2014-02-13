@@ -37,12 +37,15 @@ html, body, .container-fluid, .row, .col-md-12{
 	top: 110px;
 	height: 390px;
 	width: 100px;
+	background-color: #9932CC;
 }
 
 .carousel-control.left {
 	top: 110px;
 	height: 390px;
 	width: 100px;
+	background-color: #9932CC;
+
 }
 
 
@@ -63,8 +66,8 @@ position: relative;
 .img-thumbnail{
 	min-height: 375px;
 	max-height: 375px;
-	min-width: 1200px;
-	max-width: 1200px;
+	min-width: 500px;
+	max-width: 500px;
 	margin: 0 auto;
 }
 
@@ -87,4 +90,18 @@ position: relative;
 {
 	text-decoration: bold;
 }
+
+
+.transbox
+  {
+  max-width:1000px;
+  height:1000px;
+  margin: 0 auto;
+  background-color:#ffffff;
+  border:1px solid black;
+  background: rgba(255,255,255,.6);
+  position: relative;
+  border-radius: 50px;
+  top: 90px;
+  }
 

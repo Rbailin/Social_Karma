@@ -1,6 +1,7 @@
 SocialKarma::Application.routes.draw do
 
   get "welcome/index"
+
   get 'users' => 'users#index'
   get 'users/new' => 'users#new'
   post 'users' => 'users#create'
